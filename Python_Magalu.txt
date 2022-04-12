@@ -1,0 +1,116 @@
+https://drive.google.com/drive/folders/1EPraidPhxN1Z8roeVRaWm2N6cvMYdcXV?usp=sharing
+
+Ferramenta para desenhar modelo de dados
+draw.io 
+
+Lib Datetime
+https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior
+
+Atalho documentação VScode
+pressionar o alt e colocar o mouse em cima da função/classe para exibir a documentação no VScode
+
+Abrir o jupyter notebook
+python -m notebook
+
+Nomenclatura de variáveis:
+camelCase
+slither_case
+
+Cast de variáveis, mudar o tipo
+
+minhaNota = "8"
+minhaNotaFloat = float(minhaNota)
+
+robô de lógica
+https://www.robomind.net/
+
+padrões de escrita de código python
+https://www.python.org/dev/peps/pep-0008/
+
+Python usa tabela ascii para fazer comparação de valores (<, >, <=,...)
+
+ctrl+/ para comentar bloco
+
+##### While
+** não usar while true (while eterno, 2==2)** vai tirar nota na prova
+Deve sempre ter uma conta no while p ele q chegue a zero, ao fim
+Usar a condição com < ao invés de != em geral garante maior segurança ao seu algoritmo, pois evita imprevistos caso você receba números do usuário!
+iniciar a variável utilizada no while com um valor q caia na condição para iniciar o loop
+	nota = -1
+	while not(0 <= nota <= 10):
+
+Usar a condição com < ao invés de != em geral garante maior segurança ao seu algoritmo, pois evita imprevistos caso você receba números do usuário!
+
+break, continue e else
+O while pode ser parado no meio com o break, isso é utilizado caso exista algum(ns) casos excepcionais onde seu código deve parar ou mesmo para poupar processamento em um loop que já fez o que precisava e usava a condição inicial apenas como limite de iterações.
+Com o comando continue conseguimos parar uma iteração no meio e recomeçar o bloco do while.
+O else aqui vai se comportar como um "e então", pois será o bloco de código que rodará quando, se e somente se, a condição do while não for mais satisfeita.
+
+##### Lista
+lista + lista1 concatena e não soma
+só pode multiplicar lista por inteiro e eles são repetidos x vezes
+lista2 = lista1 não atribui, somente faz a lista 2 apontar para o mesmo endereço de memória da lista 1, ou seja, é uma lista só. Se mudar a 1 ou a 2 as 2 continuam iguais.
+Para atribuir tem q usar lista2 = lista1.copy
+
+minha_lista[1:3]: seleciona os elementos de indice 1 até indice 2
+minha_lista[:4]: seleciona do primeiro elemento até o de índice 3
+minha_lista[3:]: seleciona do elemento de índice 3 até o final
+minha_lista[:]: seleciona a lista inteira
+
+
+Consulta de comandos
+https://www.w3schools.com/python/python_lists.asp
+
+https://www.beecrowd.com.br/judge/en/login
+
+Operadores lógicos
+>	maior
+<	menor
+>= 	maior igual
+<= 	menor igual
+!= 	diferente
+== 	igual
+
+Operadores matemáticos
++	Adição
+-	Subtração
+*	Multiplicação
+/	Divisão
+%	Resto de divisão
+**	Potênciação
+//	Divisão Inteira
+
+print(f"Seu salário bruto esse mês é de: R${round(salario_total, 2)}")
+
+Condicional Curta (Operador ternário)
+if a > 10: print("'a' maior que 10")
+
+print("'a' maior que 10") if a > 10 else print("'a' menor ou igual a 10")
+
+y = (1 if a > 10 else 4)
+print(y)
+
+Mede o tempo de execução
+%%timeit
+
+# o round arredonda o número e guarda ele assim. O :.2f arredonda só na mensagem, o número é armazenado completo
+tempo_total = round(distanica/velocidade + tempo_descanso, 2)
+print (f"O tempo total de viagem será: {tempo_total:.2f}")
+
+
+BIG O
+https://www.youtube.com/watch?v=Q_1M2JaijjQ
+
+Grafos
+DFS
+https://www.youtube.com/watch?v=PMMc4VsIacU
+
+BFS
+https://www.youtube.com/watch?v=xlVX7dXLS64
+
+Matriz
+https://www.youtube.com/watch?v=IzG9l_7GaZM
+
+
+https://www.wolframalpha.com/
+

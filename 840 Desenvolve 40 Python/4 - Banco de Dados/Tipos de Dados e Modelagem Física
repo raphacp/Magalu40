@@ -1,0 +1,269 @@
+# Tipos de dados
+
+## Númericos
+
+- **BIT**: como seu nome sugere, trata-se um dado do tipo bit, podendo armazenar de 1 a 64 bits.
+
+- **TINYINT**: um inteiro pequeníssimo. Seu valor varia entre -128 e 127 caso seja signed, ou de 0 a 255 quando unsigned.
+
+- **BOOL** ou **BOOLEAN**: na prática é o mesmo que usar um TINYINT(1). Quando 0, é considerado falso, quando 1 (ou outro valor diferente de 0), é considerado verdadeiro.
+
+- **SMALLINT**: um pouquinho maior que o TINYINT, seu valor varia de -8388608 a 8388607 ou 0 a 16777215, quando SIGNED ou UNSIGNED, respectivamente (acho que vocês ja pegaram a ideia).
+
+- **INT** ou **INTEGER**: um inteiro de tamanho padrão, seu valor pode ser de -2147483648 a 2147483647 ou de 0 a 4294967295.
+
+- **BIGINT**: como vocês já devem imaginar, é um inteiro grande, seu range é -9223372036854775808 a 9223372036854775807 ou 0 a 18446744073709551615 (sim, eu também nem sei ler esse número). Como toda operação no MySQL é feita usando BIGINT ou DOUBLE, é recomendável que não se armazenem números maiores que 9223372036854775807 (63 bits), assim você evita resultados indesejados que podem ocorrer na conversao de BIGINT para DOUBLE.
+
+- **DECIMAL**: um número de ponto fixo. Possui no máximo 65 digios antes da birgula e 30 após ela. Caso essa quantidade de dígitos não seja informada, assumem os valores 10 e 0, respectivamente. Caso receba o atributo “UNSIGNED”, números negativos não serão suportados. Todas as operações com decimais acontecem com uma precisão de 65 dígitos.
+
+- **FLOAT**: um número de ponto flutuante de precisão simples. Os valore permitidos são de -3.402823466E+38 a -1.175494351E-38, 0, e de 1.175494351E-38 a 3.402823466E+38. Estes são limites teóricos baseados na norma técnica IEEE 754, mas seu range real é baseado no seu Hardware e Sistema Operacional, podendo ser menor. Usar FLOAT pode acarretar em problemas inesperados, pois todo cálculo feito no MySQL utiliza números de precisão dupla.
+
+- **DOUBLE**: número de ponto flutuante de precisão dupla. Os valores permitidos são de -1.7976931348623157E+308 to -2.2250738585072014E-308, 0, and 2.2250738585072014E-308 to 1.7976931348623157E+308. Todas as outras regras seguem as definições do tipo FLOAT.
+
+Como colinha podemos usar:
+
+<img src="https://miro.medium.com/max/1400/1*MWGJF0l5g6pb6_3YZAFJwA.png">
+
+---
+
+## Data e Hora
+
+- **DATE**: o nome já é bem sugestivo, se trata de uma data simples. O MySQL exibe dados teste tipo no padrão ‘AAAA-MM-DD’ ,e.g. 2018–08–06. O tipo DATE permite valores informados como string ou números. Aceita dados entre 1000–01–01 e 9999–12–31.
+
+- **DATETIME**: uma combinação de data e hora. No MySQL, os dados deste tipo são eximidos no formato ‘AAAA-MM-DD HH:MM:SS[.fração]’ e, assim como no DATE, permite que os valores também sejam informados como string ou números. Um fsp entre 0 e 6 pode ser informado para especificar o número de casas da fração de tempo, caso suprimido, o valor padrão é 0. Suporta valores entre 1000–01–01 00:00:00.000000 e 9999–12–31 23:59:59.999999. Ex:
+
+  - DATETIME(5): 2018–08–06 19:25:47.19546;
+  - DATETIME ou DATETIME(0): 2018–08–06 19:25:47;
+
+- **TIMESTAMP**: um dado desse tipo é armazenado como a quantidade de segundos que passou desde uma data de referência (no caso do MySQL é 1970–01–01 00:00:00 UTC).
+
+- **TIME**: este dado é utilizado para armazenar um range (faixa) de tempo, é exibido pelo MySQL no formato ‘HH:MM:SS[.fração] e seu valor pode estar entre -838:59:59.000000 e 838:59:59.000000.
+
+- **YEAR**: O ano, representado por 4 dígitos. É exibido no formato ‘AAAA’ e pode ter valores entre 1901 e 2155, além do valor 0000. Em versões mais antigas do MySQL ainda tínhamos a opção de YEAR(2), como vocês podem imaginar ele era exibido no formato ‘AA’.
+
+---
+
+## Strings
+
+- **CHAR**: uma string de tamanho fixo (preenchida), que pode assumir um tamanhos entre 0 e 255. Caso todas as posições da string não sejam utilizadas, ela será completada com espaços até atingir o tamanho total.
+
+- **VARCHAR**: uma string de tamanho variável. O valor de máximo pode variar de 0 a 65535 caracteres.
+
+- **BINARY**: similar o tipo CHAR, porém armazena os valores binários das strings ao invés dos caracteres não binários.
+
+- **VARBINARY**: similar ao VARCHAR, porém armazena os valores binários das strings ao invés dos caracteres.
+
+- **BLOB** : seu nome significa “Binary Large Object”, ou seja um objeto binário grande. Seu tamanho máximo é 65535 bytes (65KB). Temos sub tipos de blobs para outros tamanhos:
+
+  - TINYBLOB: tamanho máximo de 255 bytes;
+  - MEDIUMBLOB: tamanho máximo de 16.777.326 bytes (16MB);
+  - LONGBLOB: tamanho máximo de 4.294.967.295 bytes (4GB).
+
+- **TEXT**: suas características são como as do BLOB, e temos os sub tipos:
+
+  - TINYTEXT: suporta até 255 caracteres;
+  - MEDIUMTEXT: suporta até 16.777.326 caracteres;
+  - LONGTEXT: suporta até 4.294.967.295.
+
+- **ENUM(‘valor1’,’valor2',…)**: um enumerador que pode receber apenas 1 valor, o valor de uma coluna deste tipo só pode ser selecionado se estiver informado na lista de valores (valor1, valor2 ….), ser NULL ou vazio, este último indica erro. Dados do tipo ENUM são armazenados como um inteiro pelo banco. Um ENUM pode conter uma coleção de no máximo 65535 elementos.
+
+# Modelagem física
+
+## Criação
+
+### Criação de um Banco de Dados
+
+```sql
+CREATE DATABASE nome_banco_dados;
+```
+
+### Criação de tabelas
+
+```sql
+CREATE TABLE nome_table (
+    coluna1 tipo_dado,
+    coluna2 tipo_dado,
+    coluna3 tipo_dado,
+   ....
+);
+```
+
+Exemplo concreto:
+
+```sql
+CREATE TABLE Persons (
+    PessoaID int,
+    Sobrenome varchar(255),
+    Nome varchar(255),
+    Logradouro varchar(255),
+    Cidade varchar(255)
+);
+```
+
+### Restrições
+
+- NOT NULL - Garante que o valor da coluna não será vazio
+- UNIQUE - Garante que cada registro tera um valor único naquela coluna
+- PRIMARY KEY - Um combinação de NOT NULL e UNIQUE. Tem o papel de ser o identificador único de cada registro.
+- FOREIGN KEY - Faz a vinculo da coluna em questão com a chave primária de outra coluna gerando os relacionamentos.
+- CHECK - Garante que os valores inseridos respeitem uma certa condição.
+- DEFAULT - Define um valor padrão para a coluna caso não seja fornecido nada na inserção.
+- CREATE INDEX - Define a coluna como uma referência de buscar o que torna consultas através dela muito mais eficientes.
+
+**Exemplos**
+
+NOT NULL
+
+```sql
+CREATE TABLE Persons (
+    ID int NOT NULL,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255) NOT NULL,
+    Age int
+);
+```
+
+UNIQUE
+
+```sql
+CREATE TABLE Persons (
+    ID int NOT NULL,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255),
+    Age int,
+    UNIQUE (ID)
+);
+```
+
+PRIMARY KEY
+
+```sql
+CREATE TABLE Persons (
+    ID int NOT NULL,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255),
+    Age int,
+    PRIMARY KEY (ID)
+);
+```
+
+FOREIGN KEY
+
+```sql
+CREATE TABLE Orders (
+    OrderID int NOT NULL,
+    OrderNumber int NOT NULL,
+    PersonID int,
+    PRIMARY KEY (OrderID),
+    FOREIGN KEY (PersonID) REFERENCES Persons(PersonID)
+);
+```
+
+FOREIGN KEY
+
+```sql
+CREATE TABLE Orders (
+    OrderID int NOT NULL,
+    OrderNumber int NOT NULL,
+    PersonID int,
+    PRIMARY KEY (OrderID),
+    FOREIGN KEY (PersonID) REFERENCES Persons(PersonID)
+);
+```
+
+CHECK
+
+```sql
+CREATE TABLE Persons (
+    ID int NOT NULL,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255),
+    Age int,
+    CHECK (Age>=18)
+);
+```
+
+DEFAULT
+
+```sql
+CREATE TABLE Persons (
+    ID int NOT NULL,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255),
+    Age int,
+    City varchar(255) DEFAULT 'Sandnes'
+);
+```
+
+INDEX
+
+```sql
+CREATE INDEX idx_person_name
+ON Persons(FirstName);
+```
+
+e para remover índice:
+
+```sql
+ALTER TABLE Persons
+DROP INDEX idx_person_name;
+```
+
+AUTO_INCREMENT
+
+```sql
+CREATE TABLE Persons (
+    Personid int NOT NULL AUTO_INCREMENT,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255),
+    Age int,
+    PRIMARY KEY (Personid)
+);
+```
+
+---
+
+## Alteração das Tabelas
+
+#### Adicionar Coluna
+
+```sql
+ALTER TABLE Cliente
+ADD Email varchar(50);
+```
+
+#### Remover Coluna
+
+```sql
+ALTER TABLE Cliente
+DROP COLUMN Email;
+```
+
+#### Alterar Coluna
+
+```sql
+ALTER TABLE Cliente
+MODIFY COLUMN Email varchar(100);
+```
+
+---
+
+## Remoção
+
+### Banco de Dados
+
+```sql
+DROP DATABASE nome_banco_dados;
+```
+
+### Tabelas
+
+```sql
+DROP TABLE nome_table;
+```
+
+Para apagar apenas o conteúdo da tabela, e não a tabela em sí:
+
+```sql
+TRUNCATE TABLE nome_table;
+```

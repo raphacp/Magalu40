@@ -1,0 +1,13 @@
+Id_Curso,Curso,Descricao,Id_Depto,Departamento
+1,Estatística,"Cálculos e conceitos matemáticos relacionados à estatísticas.",1,Exatas
+2,Finanças,"Fundamentos e noções básicas sobre finanças e mercado de capitais.",1,Exatas
+3,"Ciência da Computação","Lógica de Programação com linguagem Python e cálculos matemáticos básicos, Banco de Dados e técnicas/ferramentas de Data Science e IA.",9,TI
+4,"Engenharia Elétrica","Técnicas para projetar e implementar instalações e circuitos elétricos.",1,Exatas
+5,Marketing,"Conceitos e técnicas para Marketing, trabalhando com ferramentas de propaganda e publicidade.",2,Humanas
+6,"Gestão de RH","Psicologia e prática para trabalhar com Recursos Humanos, buscando e explorando habilidades das pessoas.",2,Humanas
+7,"Gestão Comercial","Administração e desenvolvimento de propagandas, vendas, gestão de projetos comerciais e liderança de equipe.",2,Humanas
+8,Letras,"Conhecimento e exploração profunda na literatura brasileira e básica na literatura mundial.",2,Humanas
+9,Inglês,"Gramática, leitura, audição e conversação do idioma na teoria e prática.",3,Idiomas
+10,Espanhol,"Gramática, leitura, audição e conversação do idioma na teoria e prática.",3,Idiomas
+11,Alemão,"Gramática, leitura, audição e conversação do idioma na teoria e prática.",3,Idiomas
+12,Francês,"Gramática, leitura, audição e conversação do idioma na teoria e prática.",3,Idiomas

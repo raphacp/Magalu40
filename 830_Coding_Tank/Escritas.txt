@@ -1,0 +1,25 @@
+https://drive.google.com/drive/folders/1EPraidPhxN1Z8roeVRaWm2N6cvMYdcXV?usp=sharing
+
+
+Abrir o jupyter notebook
+python -m notebook
+
+Nomenclatura de variáveis:
+camelCase
+slither_case
+
+Cast de variáveis, mudar o tipo
+
+minhaNota = "8"
+minhaNotaFloat = float(minhaNota)
+
+robô de lógica
+https://www.robomind.net/
+
+padrões de escrita de código python
+https://www.python.org/dev/peps/pep-0008/
+
+Python usa tabela ascii para fazer comparação de valores (<, >, <=,...)
+
+
+

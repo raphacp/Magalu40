@@ -1,0 +1,39 @@
+Codigo,Disciplina,Pre_Requisito,Disciplina
+1,"Cálculo 1",NULL,NULL
+2,"Cálculo 2",1,"Cálculo 1"
+3,Probabilidade,NULL,NULL
+4,"Equações Lineares",NULL,NULL
+5,"Matemática Financeira",NULL,NULL
+6,"Admin. e Contabilidade",NULL,NULL
+7,"Mercado de Capitais",5,"Matemática Financeira"
+8,Python,NULL,NULL
+9,"Data Science e IA",8,Python
+10,"Banco de Dados",NULL,NULL
+11,"Circuitos Elétricos",NULL,NULL
+12,"Instalações Elétricas",11,"Circuitos Elétricos"
+13,"Elementos do Marketing",NULL,NULL
+14,"Mapeamento do Público",NULL,NULL
+15,"Criação e Melhorias",13,"Elementos do Marketing"
+16,"Mídias Sociais",NULL,NULL
+17,"Comportam. do Consumidor",NULL,NULL
+18,"Comércio exterior",13,"Elementos do Marketing"
+19,"Gestão de Projetos",6,"Admin. e Contabilidade"
+20,"Introd. Psicologia",NULL,NULL
+21,"Gestão de Competências",NULL,NULL
+22,"Identif. Realoc. de Talentos",20,"Introd. Psicologia"
+23,"Concepções de Linguagem",NULL,NULL
+24,"Gêneros Literários",NULL,NULL
+25,"Variação Linguística",NULL,NULL
+26,"Literaturas na Educação Básica",24,"Gêneros Literários"
+27,"Inglês Básico",NULL,NULL
+28,"Inglês Intermediário",27,"Inglês Básico"
+29,"Inglês Avançado",28,"Inglês Intermediário"
+30,"Espanhol Básico",NULL,NULL
+31,"Espanhol Intermediário",30,"Espanhol Básico"
+32,"Espanhol Avançado",31,"Espanhol Intermediário"
+33,"Alemão Básico",NULL,NULL
+34,"Alemão Intermediário",33,"Alemão Básico"
+35,"Alemão Avançado",34,"Alemão Intermediário"
+36,"Francês Básico",NULL,NULL
+37,"Francês Intermediário",36,"Francês Básico"
+38,"Francês Avançado",37,"Francês Intermediário"

@@ -1,0 +1,45 @@
+Codigo,Curso,Descricao,Disciplina,Codigo,Qtde_Creditos
+1,Estatística,"Cálculos e conceitos matemáticos relacionados à estatísticas.","Cálculo 1",1,2
+1,Estatística,"Cálculos e conceitos matemáticos relacionados à estatísticas.","Cálculo 2",2,3
+1,Estatística,"Cálculos e conceitos matemáticos relacionados à estatísticas.",Probabilidade,3,4
+1,Estatística,"Cálculos e conceitos matemáticos relacionados à estatísticas.","Equações Lineares",4,5
+2,Finanças,"Fundamentos e noções básicas sobre finanças e mercado de capitais.","Matemática Financeira",5,3
+2,Finanças,"Fundamentos e noções básicas sobre finanças e mercado de capitais.","Admin. e Contabilidade",6,2
+2,Finanças,"Fundamentos e noções básicas sobre finanças e mercado de capitais.","Mercado de Capitais",7,4
+3,"Ciência da Computação","Lógica de Programação com linguagem Python e cálculos matemáticos básicos, Banco de Dados e técnicas/ferramentas de Data Science e IA.","Cálculo 1",1,2
+3,"Ciência da Computação","Lógica de Programação com linguagem Python e cálculos matemáticos básicos, Banco de Dados e técnicas/ferramentas de Data Science e IA.",Probabilidade,3,4
+3,"Ciência da Computação","Lógica de Programação com linguagem Python e cálculos matemáticos básicos, Banco de Dados e técnicas/ferramentas de Data Science e IA.",Python,8,3
+3,"Ciência da Computação","Lógica de Programação com linguagem Python e cálculos matemáticos básicos, Banco de Dados e técnicas/ferramentas de Data Science e IA.","Data Science e IA",9,5
+3,"Ciência da Computação","Lógica de Programação com linguagem Python e cálculos matemáticos básicos, Banco de Dados e técnicas/ferramentas de Data Science e IA.","Banco de Dados",10,6
+4,"Engenharia Elétrica","Técnicas para projetar e implementar instalações e circuitos elétricos.","Cálculo 1",1,2
+4,"Engenharia Elétrica","Técnicas para projetar e implementar instalações e circuitos elétricos.","Circuitos Elétricos",11,3
+4,"Engenharia Elétrica","Técnicas para projetar e implementar instalações e circuitos elétricos.","Instalações Elétricas",12,4
+5,Marketing,"Conceitos e técnicas para Marketing, trabalhando com ferramentas de propaganda e publicidade.","Elementos do Marketing",13,3
+5,Marketing,"Conceitos e técnicas para Marketing, trabalhando com ferramentas de propaganda e publicidade.","Mapeamento do Público",14,4
+5,Marketing,"Conceitos e técnicas para Marketing, trabalhando com ferramentas de propaganda e publicidade.","Criação e Melhorias",15,5
+5,Marketing,"Conceitos e técnicas para Marketing, trabalhando com ferramentas de propaganda e publicidade.","Mídias Sociais",16,6
+6,"Gestão de RH","Psicologia e prática para trabalhar com Recursos Humanos, buscando e explorando habilidades das pessoas.","Admin. e Contabilidade",6,2
+6,"Gestão de RH","Psicologia e prática para trabalhar com Recursos Humanos, buscando e explorando habilidades das pessoas.","Introd. Psicologia",20,2
+6,"Gestão de RH","Psicologia e prática para trabalhar com Recursos Humanos, buscando e explorando habilidades das pessoas.","Gestão de Competências",21,3
+6,"Gestão de RH","Psicologia e prática para trabalhar com Recursos Humanos, buscando e explorando habilidades das pessoas.","Identif. Realoc. de Talentos",22,4
+7,"Gestão Comercial","Administração e desenvolvimento de propagandas, vendas, gestão de projetos comerciais e liderança de equipe.","Admin. e Contabilidade",6,2
+7,"Gestão Comercial","Administração e desenvolvimento de propagandas, vendas, gestão de projetos comerciais e liderança de equipe.","Elementos do Marketing",13,3
+7,"Gestão Comercial","Administração e desenvolvimento de propagandas, vendas, gestão de projetos comerciais e liderança de equipe.","Comportam. do Consumidor",17,3
+7,"Gestão Comercial","Administração e desenvolvimento de propagandas, vendas, gestão de projetos comerciais e liderança de equipe.","Comércio exterior",18,4
+7,"Gestão Comercial","Administração e desenvolvimento de propagandas, vendas, gestão de projetos comerciais e liderança de equipe.","Gestão de Projetos",19,5
+8,Letras,"Conhecimento e exploração profunda na literatura brasileira e básica na literatura mundial.","Concepções de Linguagem",23,2
+8,Letras,"Conhecimento e exploração profunda na literatura brasileira e básica na literatura mundial.","Gêneros Literários",24,3
+8,Letras,"Conhecimento e exploração profunda na literatura brasileira e básica na literatura mundial.","Variação Linguística",25,4
+8,Letras,"Conhecimento e exploração profunda na literatura brasileira e básica na literatura mundial.","Literaturas na Educação Básica",26,5
+9,Inglês,"Gramática, leitura, audição e conversação do idioma na teoria e prática.","Inglês Básico",27,2
+9,Inglês,"Gramática, leitura, audição e conversação do idioma na teoria e prática.","Inglês Intermediário",28,3
+9,Inglês,"Gramática, leitura, audição e conversação do idioma na teoria e prática.","Inglês Avançado",29,4
+10,Espanhol,"Gramática, leitura, audição e conversação do idioma na teoria e prática.","Espanhol Básico",30,2
+10,Espanhol,"Gramática, leitura, audição e conversação do idioma na teoria e prática.","Espanhol Intermediário",31,3
+10,Espanhol,"Gramática, leitura, audição e conversação do idioma na teoria e prática.","Espanhol Avançado",32,4
+11,Alemão,"Gramática, leitura, audição e conversação do idioma na teoria e prática.","Alemão Básico",33,2
+11,Alemão,"Gramática, leitura, audição e conversação do idioma na teoria e prática.","Alemão Intermediário",34,3
+11,Alemão,"Gramática, leitura, audição e conversação do idioma na teoria e prática.","Alemão Avançado",35,4
+12,Francês,"Gramática, leitura, audição e conversação do idioma na teoria e prática.","Francês Básico",36,2
+12,Francês,"Gramática, leitura, audição e conversação do idioma na teoria e prática.","Francês Intermediário",37,3
+12,Francês,"Gramática, leitura, audição e conversação do idioma na teoria e prática.","Francês Avançado",38,4

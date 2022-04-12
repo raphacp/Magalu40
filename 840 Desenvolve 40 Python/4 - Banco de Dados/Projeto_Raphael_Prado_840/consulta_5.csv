@@ -1,0 +1,18 @@
+Codigo,Disciplina,Pre_Requisito,Disciplina
+2,"Cálculo 2",1,"Cálculo 1"
+7,"Mercado de Capitais",5,"Matemática Financeira"
+9,"Data Science e IA",8,Python
+12,"Instalações Elétricas",11,"Circuitos Elétricos"
+15,"Criação e Melhorias",13,"Elementos do Marketing"
+18,"Comércio exterior",13,"Elementos do Marketing"
+19,"Gestão de Projetos",6,"Admin. e Contabilidade"
+22,"Identif. Realoc. de Talentos",20,"Introd. Psicologia"
+26,"Literaturas na Educação Básica",24,"Gêneros Literários"
+28,"Inglês Intermediário",27,"Inglês Básico"
+29,"Inglês Avançado",28,"Inglês Intermediário"
+31,"Espanhol Intermediário",30,"Espanhol Básico"
+32,"Espanhol Avançado",31,"Espanhol Intermediário"
+34,"Alemão Intermediário",33,"Alemão Básico"
+35,"Alemão Avançado",34,"Alemão Intermediário"
+37,"Francês Intermediário",36,"Francês Básico"
+38,"Francês Avançado",37,"Francês Intermediário"
