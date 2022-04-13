@@ -1,0 +1,13 @@
+O projeto está bem legal, parabéns por ter feito as formatações nas tabelas mostradas no menu, ficou bem interessante. 
+Também foi legal ter se atentado em fazer dados.copy() para não modificar a base de dados original nas lógicas que envolviam modificar a lista de produtos. 
+Também foi bem legal a criação da função de validação de entrada.
+
+Pontos de melhoria:
+
+Evite deixar códigos não utilizados comentados, é melhor apagá-los para melhorar a legibilidade, exemplo do seu código:
+              # print(f"ID: {id}, PREÇO: {preco:5.2f}, CATEGORIA: {cat}")
+              # print(f"ID: {id}\nPREÇO: {preco}\nCATEGORIA: {cat}\n")
+              # print(f"ID:\t\t{id}\nPREÇO:\t\t{preco}\nCATEGORIA: \t{cat}.\n")
+              # print(f"ID:\t   {id}\nPREÇO:\t   {preco}\nCATEGORIA: {cat}\n")
+Tome cuidado para não deixar variáveis criadas que não são utilizadas depois, exemplo do seu código:
+    caro = 0
