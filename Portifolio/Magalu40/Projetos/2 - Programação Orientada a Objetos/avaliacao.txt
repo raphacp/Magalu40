@@ -1,0 +1,5 @@
+Você entregou um projeto muito organizado e bem feito.
+Achei muito interessante a criação das logs. Na prática, esse tipo de preocupação é importantíssimo.
+Como seu trabalho está muito bem feito, não tenho muito o que acrescentar. 
+Talvez, como exercícios, tratar alguns if-elses que tratam um valor recebido para levar erros e impedir o funcionamento do código.
+No mais, parabéns pela entrega e bons estudos para os próximos desafios.
