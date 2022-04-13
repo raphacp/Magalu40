@@ -1,0 +1,5 @@
+Gostei muito do uso das bibliotecas datetime e os pra criar logs! Acaba sendo muito importante pra podermos levantar dados passados/debuggar o programa.
+
+Além disso implementar um menu inicial é muito inteligente, e é como muitos programas maduros implementam interfaces.
+
+Excelente trabalho.
